@@ -1,6 +1,6 @@
 FROM hello-world
 
-FROM golang:1.26 AS builder
+FROM golang:1.27 AS builder
 WORKDIR /app
 COPY go.mod hello-devops.go ./
 RUN go build .
